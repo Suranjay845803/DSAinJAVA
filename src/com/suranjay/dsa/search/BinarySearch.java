@@ -11,6 +11,7 @@ public class BinarySearch {
         int res1 = binarySearchDesending(arr1, 6);
         System.out.println( res1 );
     }
+
     // for sorted order in assending order
     private static int binarySearch(int[] arr, int target){
         int start = 0;
@@ -20,6 +21,7 @@ public class BinarySearch {
             int midEl = arr[mid];
             if(target == midEl)
                 return mid;
+
             if( target > arr[mid]) {
                 start = mid+1;
             }else{
